@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shinobi Arena: Ultimate Jutsu Showdown!</title>
+    <title>Daftar Ninja</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,64 +18,40 @@
         </nav>
     </header>
     <main>
-        <h2>Selamat datang di Shinobi Arena!</h2>
-        <p>Pertarungan ninja terbesar dan paling seru di seluruh desa tersembunyi. Bergabunglah sekarang dan pilih ninja favoritmu untuk bertarung dengan jurus pamungkas mereka!</p>
-        
-        <h2>Fitur-Fitur Utama:</h2>
-        <ul>
-            <li>Bertarung dengan lebih dari 100 ninja dari berbagai desa tersembunyi.</li>
-            <li>Unlock jurus-jurus pamungkas yang memukau.</li>
-            <li>Mode multiplayer online untuk bertarung dengan pemain dari seluruh dunia.</li>
-            <li>Event dan turnamen bulanan dengan hadiah menarik.</li>
-            <li>Kustomisasi karakter sesuai keinginanmu.</li>
-        </ul>
-
-        <h2>Informasi Ninja:</h2>
-        <div class="deskripsi-ninja">
-            <div class="ninja">
-                <h3>Naruto Uzumaki</h3>
-                <p>Seorang ninja yang penuh semangat dan mempunyai impian menjadi Hokage. Dia menguasai jurus Rasengan.</p>
-            </div>
-            <div class="ninja">
-                <h3>Sasuke Uchiha</h3>
-                <p>Seorang ninja yang ambisius dengan kekuatan Sharingan dan memburu kekuatan untuk menegakkan keadilan.</p>
-            </div>
-            <div class="ninja">
-                <h3>Sakura Haruno</h3>
-                <p>Seorang ninja medis yang pandai dalam ilmu pengobatan dan memiliki kekuatan fisik yang kuat.</p>
-            </div>
-            <div class="ninja">
-                <h3>Kakashi Hatake</h3>
-                <p>Seorang ninja legendaris dengan Sharingan dan menguasai teknik Chidori serta Kamui.</p>
-            </div>
-            <div class="ninja">
-                <h3>Itachi Uchiha</h3>
-                <p>Seorang mantan anggota Akatsuki yang memiliki kekuatan Mangekyo Sharingan.</p>
-            </div>
-            <div class="ninja">
-                <h3>Hinata Hyuga</h3>
-                <p>Seorang ninja dengan Byakugan dan memiliki kekuatan Gentle Fist yang dahsyat.</p>
-            </div>
-            <div class="ninja">
-                <h3>Shikamaru Nara</h3>
-                <p>Seorang ninja pintar dan strategis yang menguasai teknik bayangan.</p>
-            </div>
-            <div class="ninja">
-                <h3>Neji Hyuga</h3>
-                <p>Seorang ninja yang menguasai Byakugan dan memiliki teknik serangan jarak jauh.</p>
-            </div>
-            <div class="ninja">
-                <h3>Gaara</h3>
-                <p>Seorang ninja dari Sunagakure yang memiliki kekuatan pasir dan pernah menjadi Kazekage.</p>
-            </div>
-            <div class="ninja">
-                <h3>Orochimaru</h3>
-                <p>Seorang ninja jahat yang memburu keabadian dan memiliki kekuatan Sannin legendaris.</p>
-            </div>
-        </div>
+        <h2>Daftar Ninja</h2>
+        <div id="ninja-container"></div>
+        <form id="purchase-form" action="save-ninja.php" method="POST">
+            <label for="ninja-id">ID Ninja:</label>
+            <input type="text" id="ninja-id" name="ninja-id" required>
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+            <label for="jumlah">Jumlah yang dibeli:</label>
+            <input type="number" id="jumlah" name="jumlah" required>
+            <label for="alamat">Alamat:</label>
+            <textarea id="alamat" name="alamat" rows="4" required></textarea>
+            <label for="negara">Negara:</label>
+            <input type="text" id="negara" name="negara" required>
+            <label for="kabupaten">Kabupaten/Kota:</label>
+            <input type="text" id="kabupaten" name="kabupaten" required>
+            <label for="provinsi">Provinsi:</label>
+            <input type="text" id="provinsi" name="provinsi" required>
+            <label for="telepon">Nomor Telepon:</label>
+            <input type="tel" id="telepon" name="telepon" pattern="[0-9]{10,15}" required>
+            <label for="metode-pembayaran">Metode Pembayaran:</label>
+            <select id="metode-pembayaran" name="metode-pembayaran" required>
+                <option value="cod">COD (Cash on Delivery)</option>
+                <option value="bni">BNI</option>
+                <option value="bri">BRI</option>
+                <option value="bca">BCA</option>
+                <option value="bank-syariah">Bank Syariah</option>
+                <option value="mandiri">Mandiri</option>
+            </select>
+            <button type="submit">Beli</button>
+        </form>
     </main>
     <footer>
         &copy; 2024 Shinobi Arena. All rights reserved.
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
