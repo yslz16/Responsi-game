@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    color: dimgray;
+    overflow-y: scroll; /* Menambahkan scrolling vertikal pada halaman */
+}
+
+header {
+    background-color: darkslategray;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    margin-bottom: 100px; /* Menambahkan margin bawah untuk memberikan ruang bagi footer */
+}
+
+h2 {
+    color: darkslategray;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: darkslategray;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#ninja-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ninja {
+    background-color: lightgray;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: calc(33% - 40px);
+    box-sizing: border-box;
+}
+
+.ninja h3 {
+    margin-top: 0;
+}
+
+form {
+    margin-top: 20px;
+    padding-bottom: 50px; /* Menambahkan padding bawah untuk memberi ruang agar tidak tertutup */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="number"], textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+}
+
+button {
+    background-color: darkslategray;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: slategray;
+}

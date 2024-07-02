@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Ninja</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Shinobi Arena: Ultimate Jutsu Showdown!</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ninja-list.html">Daftar Ninja</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Daftar Ninja</h2>
+        <div id="ninja-container"></div>
+        <form id="purchase-form" action="save-ninja.php" method="POST">
+            <label for="ninja-id">ID Ninja:</label>
+            <input type="text" id="ninja-id" name="ninja-id" required>
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+            <label for="jumlah">Jumlah yang dibeli:</label>
+            <input type="number" id="jumlah" name="jumlah" required>
+            <label for="alamat">Alamat:</label>
+            <textarea id="alamat" name="alamat" rows="4" required></textarea>
+            <label for="negara">Negara:</label>
+            <input type="text" id="negara" name="negara" required>
+            <label for="kabupaten">Kabupaten/Kota:</label>
+            <input type="text" id="kabupaten" name="kabupaten" required>
+            <label for="provinsi">Provinsi:</label>
+            <input type="text" id="provinsi" name="provinsi" required>
+            <label for="telepon">Nomor Telepon:</label>
+            <input type="tel" id="telepon" name="telepon" pattern="[0-9]{10,15}" required>
+            <label for="metode-pembayaran">Metode Pembayaran:</label>
+            <select id="metode-pembayaran" name="metode-pembayaran" required>
+                <option value="cod">COD (Cash on Delivery)</option>
+                <option value="bni">BNI</option>
+                <option value="bri">BRI</option>
+                <option value="bca">BCA</option>
+                <option value="bank-syariah">Bank Syariah</option>
+                <option value="mandiri">Mandiri</option>
+            </select>
+            <button type="submit">Beli</button>
+        </form>
+    </main>
+    <footer>
+        &copy; 2024 Shinobi Arena. All rights reserved.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

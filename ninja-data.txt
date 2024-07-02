@@ -1,0 +1,20 @@
+ID Ninja: 1
+Nama: Yusliza
+Jumlah yang dibeli: 1
+Alamat: Desa Grantung RT 01/ RW 03
+Negara: Indonsia
+Kabupaten/Kota: Purworejo
+Provinsi: Jawa Tengah
+Nomor Telepon: 0895422355551
+Metode Pembayaran: cod
+----------------------------------------
+ID Ninja: 1
+Nama: ninu
+Jumlah yang dibeli: 3
+Alamat: Wirosaban Indah RT 01/RW 03
+Negara: Indonesia
+Kabupaten/Kota: Yogyakarta
+Provinsi: Jawa Tengah
+Nomor Telepon: 0895422355551
+Metode Pembayaran: cod
+----------------------------------------
